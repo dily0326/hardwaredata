@@ -1,0 +1,8 @@
+2019-08-26 14:27:59.344 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - Starting HardwaredataApplication on DESKTOP-RSAL5NJ with PID 11612 (D:\JavaObject\hardwaredata\target\classes started by longs in D:\JavaObject\hardwaredata)
+2019-08-26 14:27:59.346 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - The following profiles are active: test
+2019-08-26 14:28:00.153 -> [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+2019-08-26 14:28:00.162 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+2019-08-26 14:28:00.169 -> [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-08-26 14:28:00.169 -> [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-26 14:28:00.250 -> [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-08-26 14:28:00.250 -> [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 869 ms

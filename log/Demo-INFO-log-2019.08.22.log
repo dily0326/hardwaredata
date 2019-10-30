@@ -1,0 +1,263 @@
+2019-08-22 17:39:41.278 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - Starting HardwaredataApplication on DESKTOP-RSAL5NJ with PID 8492 (D:\JavaObject\hardwaredata\target\classes started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 17:39:41.281 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - No active profile set, falling back to default profiles: default
+2019-08-22 17:39:41.849 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$7ce9f179] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 17:39:42.004 -> [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-08-22 17:39:42.014 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-22 17:39:42.019 -> [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-08-22 17:39:42.020 -> [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-22 17:39:42.087 -> [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-08-22 17:39:42.087 -> [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 774 ms
+2019-08-22 17:39:42.258 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:39:42.401 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-22 17:39:42.412 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2019-08-22 17:39:42.413 -> [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2019-08-22 17:39:42.417 -> [main] INFO  org.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-08-22 17:39:42.417 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2019-08-22 17:39:42.417 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2019-08-22 17:39:42.419 -> [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-22 17:39:42.424 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:40:06.055 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - Starting HardwaredataApplication on DESKTOP-RSAL5NJ with PID 8624 (D:\JavaObject\hardwaredata\target\classes started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 17:40:06.057 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - No active profile set, falling back to default profiles: default
+2019-08-22 17:40:06.636 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$ce67a6f2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 17:40:06.787 -> [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-08-22 17:40:06.795 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-22 17:40:06.801 -> [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-08-22 17:40:06.802 -> [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-22 17:40:06.871 -> [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-08-22 17:40:06.871 -> [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 783 ms
+2019-08-22 17:40:07.050 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:40:07.210 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-22 17:40:07.226 -> [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-22 17:40:07.228 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - Started HardwaredataApplication in 1.435 seconds (JVM running for 2.087)
+2019-08-22 17:40:43.202 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - Starting HardwaredataApplication on DESKTOP-RSAL5NJ with PID 38056 (D:\JavaObject\hardwaredata\target\classes started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 17:40:43.204 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - No active profile set, falling back to default profiles: default
+2019-08-22 17:40:43.741 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$aee601c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 17:40:43.926 -> [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-08-22 17:40:43.935 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-22 17:40:43.943 -> [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-08-22 17:40:43.943 -> [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-22 17:40:44.029 -> [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-08-22 17:40:44.030 -> [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 795 ms
+2019-08-22 17:40:44.265 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:40:44.429 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-22 17:40:44.445 -> [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-22 17:40:44.447 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - Started HardwaredataApplication in 1.541 seconds (JVM running for 2.183)
+2019-08-22 17:41:12.838 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - Starting HardwaredataApplication on DESKTOP-RSAL5NJ with PID 40636 (D:\JavaObject\hardwaredata\target\classes started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 17:41:12.840 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - No active profile set, falling back to default profiles: default
+2019-08-22 17:41:13.357 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$18a2ca29] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 17:41:13.545 -> [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-08-22 17:41:13.559 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-22 17:41:13.576 -> [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-08-22 17:41:13.577 -> [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-22 17:41:13.666 -> [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-08-22 17:41:13.666 -> [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 791 ms
+2019-08-22 17:41:13.842 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:41:13.993 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-22 17:41:14.009 -> [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-22 17:41:14.011 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - Started HardwaredataApplication in 1.435 seconds (JVM running for 2.089)
+2019-08-22 17:41:14.013 -> [main] INFO  com.ytrj.hardwaredata.service.Server - 服务端已启动，等待客户端连接..
+2019-08-22 17:41:20.983 -> [main] INFO  com.ytrj.hardwaredata.service.Server - 接到客户端请求连接，客户端IP:127.0.0.1
+2019-08-22 17:41:22.819 -> [Thread-10] INFO  com.ytrj.hardwaredata.service.Server - 收到客户端127.0.0.1信息：11111111112
+2019-08-22 17:41:23.057 -> [Thread-10] INFO  com.ytrj.hardwaredata.service.Server - 收到客户端127.0.0.1信息：11111111112
+2019-08-22 17:41:23.234 -> [Thread-10] INFO  com.ytrj.hardwaredata.service.Server - 收到客户端127.0.0.1信息：11111111112
+2019-08-22 17:41:23.373 -> [Thread-10] INFO  com.ytrj.hardwaredata.service.Server - 收到客户端127.0.0.1信息：11111111112
+2019-08-22 17:41:24.849 -> [Thread-10] INFO  com.ytrj.hardwaredata.service.Server - 收到客户端127.0.0.1断开了连接！
+2019-08-22 17:41:25.586 -> [main] INFO  com.ytrj.hardwaredata.service.Server - 接到客户端请求连接，客户端IP:127.0.0.1
+2019-08-22 17:41:27.019 -> [Thread-11] INFO  com.ytrj.hardwaredata.service.Server - 收到客户端127.0.0.1断开了连接！
+2019-08-22 17:41:48.649 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - Starting HardwaredataApplication on DESKTOP-RSAL5NJ with PID 29992 (D:\JavaObject\hardwaredata\target\classes started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 17:41:48.656 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - No active profile set, falling back to default profiles: default
+2019-08-22 17:41:49.242 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$54ff2632] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 17:41:49.410 -> [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-08-22 17:41:49.417 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-22 17:41:49.423 -> [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-08-22 17:41:49.423 -> [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-22 17:41:49.496 -> [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-08-22 17:41:49.496 -> [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 794 ms
+2019-08-22 17:41:49.684 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:41:49.860 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-22 17:41:49.876 -> [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-22 17:41:49.878 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - Started HardwaredataApplication in 1.53 seconds (JVM running for 2.187)
+2019-08-22 17:41:49.879 -> [main] INFO  com.ytrj.hardwaredata.service.Server - 服务端已启动，等待客户端连接..
+2019-08-22 17:41:53.632 -> [main] INFO  com.ytrj.hardwaredata.service.Server - 接到客户端请求连接，客户端IP:127.0.0.1
+2019-08-22 17:41:55.612 -> [Thread-10] INFO  com.ytrj.hardwaredata.service.Server - 收到客户端127.0.0.1信息：11111111112
+2019-08-22 17:42:13.391 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 28500 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 17:42:13.393 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 17:42:14.068 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$ad017439] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 17:42:15.028 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:42:15.460 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 2.307 seconds (JVM running for 2.941)
+2019-08-22 17:42:15.681 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:44:27.080 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 10972 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 17:44:27.081 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 17:44:27.765 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$7b12c9a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 17:44:28.535 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:44:28.902 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 2.06 seconds (JVM running for 2.628)
+2019-08-22 17:44:29.064 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:47:13.747 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 21728 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 17:47:13.748 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 17:47:14.409 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$7b12c9a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 17:47:15.238 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:47:15.606 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 2.13 seconds (JVM running for 2.725)
+2019-08-22 17:47:15.768 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:47:58.521 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 29196 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 17:47:58.522 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 17:47:59.635 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$ad017439] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 17:48:00.746 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:48:01.247 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 3.025 seconds (JVM running for 3.637)
+2019-08-22 17:48:01.467 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:48:47.400 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 4076 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 17:48:47.401 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 17:48:48.121 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$2a1c8a1e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 17:48:49.208 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:48:49.694 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 2.604 seconds (JVM running for 3.195)
+2019-08-22 17:48:49.880 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:49:55.722 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 40596 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 17:49:55.725 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 17:49:56.369 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$26de0778] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 17:49:57.161 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:49:57.417 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 1.933 seconds (JVM running for 2.502)
+2019-08-22 17:49:57.611 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:53:59.857 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 40872 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 17:53:59.858 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 17:54:00.520 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$26de0778] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 17:54:01.288 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 17:54:01.608 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 2.003 seconds (JVM running for 2.596)
+2019-08-22 17:54:01.754 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 18:09:56.857 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 16396 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 18:09:56.858 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 18:09:57.549 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$e4b8dbfb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 18:09:58.360 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 18:09:58.702 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 2.09 seconds (JVM running for 2.707)
+2019-08-22 18:09:58.883 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 18:13:16.872 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 38084 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 18:13:16.873 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 18:13:17.497 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$26de0778] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 18:13:18.331 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 18:13:18.684 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 2.053 seconds (JVM running for 2.611)
+2019-08-22 18:13:18.834 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:10:40.617 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 10480 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 19:10:40.621 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 19:10:41.715 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$26de0778] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 19:10:42.820 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:10:43.438 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 3.068 seconds (JVM running for 3.658)
+2019-08-22 19:10:43.704 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:30:45.731 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 29180 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 19:30:45.732 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 19:30:46.404 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$26de0778] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 19:30:47.252 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:30:47.574 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 2.082 seconds (JVM running for 2.678)
+2019-08-22 19:30:47.733 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:35:36.958 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 26416 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 19:35:36.960 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 19:35:37.813 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$e4b8dbfb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 19:35:38.920 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:35:39.450 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 2.982 seconds (JVM running for 3.831)
+2019-08-22 19:35:39.588 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:37:53.442 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 37804 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 19:37:53.444 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 19:37:54.065 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$26de0778] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 19:37:54.843 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:37:55.202 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 1.988 seconds (JVM running for 2.593)
+2019-08-22 19:37:55.354 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:45:57.196 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 26564 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 19:45:57.198 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 19:45:58.141 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$26de0778] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 19:45:59.279 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:45:59.750 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 3.016 seconds (JVM running for 3.843)
+2019-08-22 19:45:59.890 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:47:25.096 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 21728 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 19:47:25.104 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 19:47:26.086 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$e8df5568] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 19:47:27.183 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:47:27.598 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 2.824 seconds (JVM running for 3.665)
+2019-08-22 19:47:27.738 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:53:10.137 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 39200 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 19:53:10.138 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 19:53:11.086 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$6c8823bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 19:53:12.308 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:53:12.684 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 3.046 seconds (JVM running for 4.021)
+2019-08-22 19:53:12.847 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:56:08.549 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 2968 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 19:56:08.552 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 19:56:09.673 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$e8b7c090] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 19:56:10.958 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:56:11.518 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 3.271 seconds (JVM running for 4.085)
+2019-08-22 19:56:11.654 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:59:14.342 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 41552 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 19:59:14.343 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 19:59:15.542 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$721e5649] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 19:59:16.683 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 19:59:17.168 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 3.206 seconds (JVM running for 4.159)
+2019-08-22 19:59:17.389 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 20:00:38.149 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 19088 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 20:00:38.150 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 20:00:38.965 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$e8b7c090] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 20:00:39.733 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 20:00:40.087 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 2.173 seconds (JVM running for 2.763)
+2019-08-22 20:00:40.243 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 20:02:34.792 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 41836 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 20:02:34.794 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 20:02:35.748 -> [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$26de0778] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-22 20:02:36.763 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 20:02:37.160 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 2.859 seconds (JVM running for 3.721)
+2019-08-22 20:02:37.296 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 20:17:19.569 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 36272 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 20:17:19.570 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 20:17:21.517 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 20:17:21.820 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 2.578 seconds (JVM running for 3.294)
+2019-08-22 20:17:22.135 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 20:18:57.885 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 41516 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 20:18:57.887 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 20:18:58.962 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 20:18:59.170 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 1.536 seconds (JVM running for 2.099)
+2019-08-22 20:18:59.346 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 20:21:57.470 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 40948 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 20:21:57.472 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 20:21:58.679 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 20:21:58.863 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 1.631 seconds (JVM running for 2.272)
+2019-08-22 20:21:59.052 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 20:23:13.210 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - Starting HardwaredataApplication on DESKTOP-RSAL5NJ with PID 25248 (D:\JavaObject\hardwaredata\target\classes started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 20:23:13.214 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - No active profile set, falling back to default profiles: default
+2019-08-22 20:23:14.027 -> [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+2019-08-22 20:23:14.035 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+2019-08-22 20:23:14.042 -> [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-08-22 20:23:14.042 -> [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-22 20:23:14.110 -> [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-08-22 20:23:14.110 -> [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 845 ms
+2019-08-22 20:23:14.260 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 20:23:14.370 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+2019-08-22 20:23:14.386 -> [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
+2019-08-22 20:23:14.388 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - Started HardwaredataApplication in 1.483 seconds (JVM running for 2.138)
+2019-08-22 20:23:14.807 -> [main] INFO  com.ytrj.hardwaredata.service.Server - 服务端已启动，等待客户端连接..
+2019-08-22 20:24:48.435 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Starting HardwaredataApplicationTests on DESKTOP-RSAL5NJ with PID 33740 (started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 20:24:48.436 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - No active profile set, falling back to default profiles: default
+2019-08-22 20:24:49.601 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 20:24:49.800 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplicationTests - Started HardwaredataApplicationTests in 1.649 seconds (JVM running for 2.361)
+2019-08-22 20:24:50.000 -> [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-22 20:25:36.843 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - Starting HardwaredataApplication on DESKTOP-RSAL5NJ with PID 40792 (D:\JavaObject\hardwaredata\target\classes started by longs in D:\JavaObject\hardwaredata)
+2019-08-22 20:25:36.845 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - No active profile set, falling back to default profiles: default
+2019-08-22 20:25:37.503 -> [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9000 (http)
+2019-08-22 20:25:37.511 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+2019-08-22 20:25:37.516 -> [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-08-22 20:25:37.517 -> [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-22 20:25:37.584 -> [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-08-22 20:25:37.584 -> [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 707 ms
+2019-08-22 20:25:37.711 -> [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-22 20:25:37.808 -> [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+2019-08-22 20:25:37.823 -> [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9000 (http) with context path ''
+2019-08-22 20:25:37.825 -> [main] INFO  com.ytrj.hardwaredata.HardwaredataApplication - Started HardwaredataApplication in 1.249 seconds (JVM running for 1.905)
+2019-08-22 20:25:38.595 -> [main] INFO  com.ytrj.hardwaredata.service.Server - 服务端已启动，等待客户端连接..
+2019-08-22 20:25:38.608 -> [MQTT Call: aaa] INFO  com.ytrj.hardwaredata.onenetmq.PushCallback - time = 2019-08-21 23:49:03,msg id: 1236, body: {"sysProperty":{"messageType":"deviceDatapoint","productId":"267133"},"appProperty":{"deviceId":"540305427","dataTimestamp":1566402543434,"datastream":"27241_0_26244"},"body":"B1084100C80042FF"}
+2019-08-22 20:25:38.609 -> [MQTT Call: aaa] INFO  com.ytrj.hardwaredata.onenetmq.PushCallback - time = 2019-08-21 23:49:05,msg id: 1430, body: {"sysProperty":{"messageType":"deviceDatapoint","productId":"267133"},"appProperty":{"deviceId":"540305427","dataTimestamp":1566402545477,"datastream":"27241_0_26243"},"body":"60FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC80000FF"}
+2019-08-22 20:25:38.609 -> [MQTT Call: aaa] INFO  com.ytrj.hardwaredata.onenetmq.PushCallback - time = 2019-08-22 01:14:33,msg id: 1648, body: {"sysProperty":{"messageType":"deviceDatapoint","productId":"267133"},"appProperty":{"deviceId":"540305427","dataTimestamp":1566407673675,"datastream":"27241_0_26244"},"body":"B1084100B40042FF"}
+2019-08-22 20:25:38.609 -> [MQTT Call: aaa] INFO  com.ytrj.hardwaredata.onenetmq.PushCallback - time = 2019-08-22 01:14:36,msg id: 1842, body: {"sysProperty":{"messageType":"deviceDatapoint","productId":"267133"},"appProperty":{"deviceId":"540305427","dataTimestamp":1566407676345,"datastream":"27241_0_26243"},"body":"60FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB40000FF"}
+2019-08-22 20:25:38.610 -> [MQTT Call: aaa] INFO  com.ytrj.hardwaredata.onenetmq.PushCallback - time = 2019-08-22 08:48:18,msg id: 2060, body: {"sysProperty":{"messageType":"deviceDatapoint","productId":"267133"},"appProperty":{"deviceId":"540305427","dataTimestamp":1566434898003,"datastream":"27241_0_26243"},"body":"60FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC80000FF"}
+2019-08-22 20:25:38.610 -> [MQTT Call: aaa] INFO  com.ytrj.hardwaredata.onenetmq.PushCallback - time = 2019-08-22 20:19:30,msg id: 2278, body: {"sysProperty":{"messageType":"deviceDatapoint","productId":"267133"},"appProperty":{"deviceId":"540305427","dataTimestamp":1566476370636,"datastream":"27241_0_26244"},"body":"B1084100C80042FF"}
+2019-08-22 20:25:38.610 -> [MQTT Call: aaa] INFO  com.ytrj.hardwaredata.onenetmq.PushCallback - time = 2019-08-22 20:19:32,msg id: 2472, body: {"sysProperty":{"messageType":"deviceDatapoint","productId":"267133"},"appProperty":{"deviceId":"540305427","dataTimestamp":1566476372692,"datastream":"27241_0_26243"},"body":"60FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC80000FF"}
+2019-08-22 20:25:38.610 -> [MQTT Call: aaa] INFO  com.ytrj.hardwaredata.onenetmq.PushCallback - time = 2019-08-22 20:19:56,msg id: 2690, body: {"sysProperty":{"messageType":"deviceDatapoint","productId":"267133"},"appProperty":{"deviceId":"540305427","dataTimestamp":1566476396238,"datastream":"27241_0_26244"},"body":"B1084100B40042FF"}
+2019-08-22 20:25:38.610 -> [MQTT Call: aaa] INFO  com.ytrj.hardwaredata.onenetmq.PushCallback - time = 2019-08-22 20:19:58,msg id: 2884, body: {"sysProperty":{"messageType":"deviceDatapoint","productId":"267133"},"appProperty":{"deviceId":"540305427","dataTimestamp":1566476398295,"datastream":"27241_0_26243"},"body":"64FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB40000FF"}
+2019-08-22 20:25:38.610 -> [MQTT Call: aaa] INFO  com.ytrj.hardwaredata.onenetmq.PushCallback - time = 2019-08-22 20:22:57,msg id: 3102, body: {"sysProperty":{"messageType":"deviceDatapoint","productId":"267133"},"appProperty":{"deviceId":"540305427","dataTimestamp":1566476577365,"datastream":"27241_0_26244"},"body":"B1084100B40042FF"}
+2019-08-22 20:25:38.611 -> [MQTT Call: aaa] INFO  com.ytrj.hardwaredata.onenetmq.PushCallback - time = 2019-08-22 20:22:59,msg id: 3296, body: {"sysProperty":{"messageType":"deviceDatapoint","productId":"267133"},"appProperty":{"deviceId":"540305427","dataTimestamp":1566476579381,"datastream":"27241_0_26243"},"body":"58FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB40000FF"}
+2019-08-22 20:25:38.611 -> [MQTT Call: aaa] INFO  com.ytrj.hardwaredata.onenetmq.PushCallback - time = 2019-08-22 20:25:18,msg id: 3514, body: {"sysProperty":{"messageType":"deviceDatapoint","productId":"267133"},"appProperty":{"deviceId":"540305427","dataTimestamp":1566476718799,"datastream":"27241_0_26244"},"body":"B1084100C80042FF"}
+2019-08-22 20:25:38.611 -> [MQTT Call: aaa] INFO  com.ytrj.hardwaredata.onenetmq.PushCallback - time = 2019-08-22 20:25:20,msg id: 3708, body: {"sysProperty":{"messageType":"deviceDatapoint","productId":"267133"},"appProperty":{"deviceId":"540305427","dataTimestamp":1566476720857,"datastream":"27241_0_26243"},"body":"54FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC80000FF"}

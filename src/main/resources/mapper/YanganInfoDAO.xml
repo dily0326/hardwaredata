@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ytrj.hardwaredata.dao.YanganInfoDAO">
+  <resultMap id="BaseResultMap" type="com.ytrj.hardwaredata.entity.YanganInfo">
+    <id column="ytrj_app_yangan_info_id" jdbcType="BIGINT" property="id" />
+    <result column="ytrj_app_yangan_info_signal_quality" jdbcType="INTEGER" property="signalQuality" />
+    <result column="ytrj_app_yangan_info_electric_quantity" jdbcType="INTEGER" property="electricQuantity" />
+    <result column="ytrj_app_yangan_info_device_state" jdbcType="INTEGER" property="deviceState" />
+    <result column="ytrj_app_yangan_info_message" jdbcType="VARCHAR" property="message" />
+    <result column="ytrj_app_yangan_info_data_update_time" jdbcType="TIMESTAMP" property="dataUpdateTime" />
+    <result column="ytrj_app_yangan_info_data_timestamp" jdbcType="TIMESTAMP" property="dataTimestamp" />
+    <result column="ytrj_app_yangan_info_data_stream" jdbcType="INTEGER" property="dataStream" />
+    <result column="ytrj_app_yangan_info_device_online" jdbcType="INTEGER" property="deviceOnline" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.ytrj.hardwaredata.entity.YanganInfo">
+    <result column="ytrj_app_yangan_info_deviceId" jdbcType="LONGVARCHAR" property="deviceid" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    ytrj_app_yangan_info.id as ytrj_app_yangan_info_id, ytrj_app_yangan_info.signal_quality as ytrj_app_yangan_info_signal_quality, 
+    ytrj_app_yangan_info.electric_quantity as ytrj_app_yangan_info_electric_quantity, 
+    ytrj_app_yangan_info.device_state as ytrj_app_yangan_info_device_state, ytrj_app_yangan_info.message as ytrj_app_yangan_info_message, 
+    ytrj_app_yangan_info.data_update_time as ytrj_app_yangan_info_data_update_time, ytrj_app_yangan_info.data_timestamp as ytrj_app_yangan_info_data_timestamp, 
+    ytrj_app_yangan_info.data_stream as ytrj_app_yangan_info_data_stream, ytrj_app_yangan_info.device_online as ytrj_app_yangan_info_device_online
+  </sql>
+  <sql id="Blob_Column_List">
+    ytrj_app_yangan_info.deviceId as ytrj_app_yangan_info_deviceId
+  </sql>
+  <select id="selectByExampleWithBLOBs" parameterType="com.ytrj.hardwaredata.entity.YanganInfoExample" resultMap="ResultMapWithBLOBs">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from ytrj_app_yangan_info ytrj_app_yangan_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByExample" parameterType="com.ytrj.hardwaredata.entity.YanganInfoExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from ytrj_app_yangan_info ytrj_app_yangan_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from ytrj_app_yangan_info ytrj_app_yangan_info
+    where ytrj_app_yangan_info.id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from ytrj_app_yangan_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.ytrj.hardwaredata.entity.YanganInfoExample">
+    delete from ytrj_app_yangan_info ytrj_app_yangan_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.ytrj.hardwaredata.entity.YanganInfo" useGeneratedKeys="true">
+    insert into ytrj_app_yangan_info (signal_quality, electric_quantity, 
+      device_state, message, data_update_time, 
+      data_timestamp, data_stream, device_online, 
+      deviceId)
+    values (#{signalQuality,jdbcType=INTEGER}, #{electricQuantity,jdbcType=INTEGER}, 
+      #{deviceState,jdbcType=INTEGER}, #{message,jdbcType=VARCHAR}, #{dataUpdateTime,jdbcType=TIMESTAMP}, 
+      #{dataTimestamp,jdbcType=TIMESTAMP}, #{dataStream,jdbcType=INTEGER}, #{deviceOnline,jdbcType=INTEGER}, 
+      #{deviceid,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.ytrj.hardwaredata.entity.YanganInfo" useGeneratedKeys="true">
+    insert into ytrj_app_yangan_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="signalQuality != null">
+        signal_quality,
+      </if>
+      <if test="electricQuantity != null">
+        electric_quantity,
+      </if>
+      <if test="deviceState != null">
+        device_state,
+      </if>
+      <if test="message != null">
+        message,
+      </if>
+      <if test="dataUpdateTime != null">
+        data_update_time,
+      </if>
+      <if test="dataTimestamp != null">
+        data_timestamp,
+      </if>
+      <if test="dataStream != null">
+        data_stream,
+      </if>
+      <if test="deviceOnline != null">
+        device_online,
+      </if>
+      <if test="deviceid != null">
+        deviceId,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="signalQuality != null">
+        #{signalQuality,jdbcType=INTEGER},
+      </if>
+      <if test="electricQuantity != null">
+        #{electricQuantity,jdbcType=INTEGER},
+      </if>
+      <if test="deviceState != null">
+        #{deviceState,jdbcType=INTEGER},
+      </if>
+      <if test="message != null">
+        #{message,jdbcType=VARCHAR},
+      </if>
+      <if test="dataUpdateTime != null">
+        #{dataUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="dataTimestamp != null">
+        #{dataTimestamp,jdbcType=TIMESTAMP},
+      </if>
+      <if test="dataStream != null">
+        #{dataStream,jdbcType=INTEGER},
+      </if>
+      <if test="deviceOnline != null">
+        #{deviceOnline,jdbcType=INTEGER},
+      </if>
+      <if test="deviceid != null">
+        #{deviceid,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.ytrj.hardwaredata.entity.YanganInfoExample" resultType="java.lang.Long">
+    select count(*) from ytrj_app_yangan_info ytrj_app_yangan_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update ytrj_app_yangan_info ytrj_app_yangan_info
+    <set>
+      <if test="record.id != null">
+        ytrj_app_yangan_info.id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.signalQuality != null">
+        ytrj_app_yangan_info.signal_quality = #{record.signalQuality,jdbcType=INTEGER},
+      </if>
+      <if test="record.electricQuantity != null">
+        ytrj_app_yangan_info.electric_quantity = #{record.electricQuantity,jdbcType=INTEGER},
+      </if>
+      <if test="record.deviceState != null">
+        ytrj_app_yangan_info.device_state = #{record.deviceState,jdbcType=INTEGER},
+      </if>
+      <if test="record.message != null">
+        ytrj_app_yangan_info.message = #{record.message,jdbcType=VARCHAR},
+      </if>
+      <if test="record.dataUpdateTime != null">
+        ytrj_app_yangan_info.data_update_time = #{record.dataUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.dataTimestamp != null">
+        ytrj_app_yangan_info.data_timestamp = #{record.dataTimestamp,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.dataStream != null">
+        ytrj_app_yangan_info.data_stream = #{record.dataStream,jdbcType=INTEGER},
+      </if>
+      <if test="record.deviceOnline != null">
+        ytrj_app_yangan_info.device_online = #{record.deviceOnline,jdbcType=INTEGER},
+      </if>
+      <if test="record.deviceid != null">
+        ytrj_app_yangan_info.deviceId = #{record.deviceid,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map">
+    update ytrj_app_yangan_info ytrj_app_yangan_info
+    set ytrj_app_yangan_info.id = #{record.id,jdbcType=BIGINT},
+      ytrj_app_yangan_info.signal_quality = #{record.signalQuality,jdbcType=INTEGER},
+      ytrj_app_yangan_info.electric_quantity = #{record.electricQuantity,jdbcType=INTEGER},
+      ytrj_app_yangan_info.device_state = #{record.deviceState,jdbcType=INTEGER},
+      ytrj_app_yangan_info.message = #{record.message,jdbcType=VARCHAR},
+      ytrj_app_yangan_info.data_update_time = #{record.dataUpdateTime,jdbcType=TIMESTAMP},
+      ytrj_app_yangan_info.data_timestamp = #{record.dataTimestamp,jdbcType=TIMESTAMP},
+      ytrj_app_yangan_info.data_stream = #{record.dataStream,jdbcType=INTEGER},
+      ytrj_app_yangan_info.device_online = #{record.deviceOnline,jdbcType=INTEGER},
+      ytrj_app_yangan_info.deviceId = #{record.deviceid,jdbcType=LONGVARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update ytrj_app_yangan_info ytrj_app_yangan_info
+    set ytrj_app_yangan_info.id = #{record.id,jdbcType=BIGINT},
+      ytrj_app_yangan_info.signal_quality = #{record.signalQuality,jdbcType=INTEGER},
+      ytrj_app_yangan_info.electric_quantity = #{record.electricQuantity,jdbcType=INTEGER},
+      ytrj_app_yangan_info.device_state = #{record.deviceState,jdbcType=INTEGER},
+      ytrj_app_yangan_info.message = #{record.message,jdbcType=VARCHAR},
+      ytrj_app_yangan_info.data_update_time = #{record.dataUpdateTime,jdbcType=TIMESTAMP},
+      ytrj_app_yangan_info.data_timestamp = #{record.dataTimestamp,jdbcType=TIMESTAMP},
+      ytrj_app_yangan_info.data_stream = #{record.dataStream,jdbcType=INTEGER},
+      ytrj_app_yangan_info.device_online = #{record.deviceOnline,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ytrj.hardwaredata.entity.YanganInfo">
+    update ytrj_app_yangan_info
+    <set>
+      <if test="signalQuality != null">
+        signal_quality = #{signalQuality,jdbcType=INTEGER},
+      </if>
+      <if test="electricQuantity != null">
+        electric_quantity = #{electricQuantity,jdbcType=INTEGER},
+      </if>
+      <if test="deviceState != null">
+        device_state = #{deviceState,jdbcType=INTEGER},
+      </if>
+      <if test="message != null">
+        message = #{message,jdbcType=VARCHAR},
+      </if>
+      <if test="dataUpdateTime != null">
+        data_update_time = #{dataUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="dataTimestamp != null">
+        data_timestamp = #{dataTimestamp,jdbcType=TIMESTAMP},
+      </if>
+      <if test="dataStream != null">
+        data_stream = #{dataStream,jdbcType=INTEGER},
+      </if>
+      <if test="deviceOnline != null">
+        device_online = #{deviceOnline,jdbcType=INTEGER},
+      </if>
+      <if test="deviceid != null">
+        deviceId = #{deviceid,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.ytrj.hardwaredata.entity.YanganInfo">
+    update ytrj_app_yangan_info
+    set signal_quality = #{signalQuality,jdbcType=INTEGER},
+      electric_quantity = #{electricQuantity,jdbcType=INTEGER},
+      device_state = #{deviceState,jdbcType=INTEGER},
+      message = #{message,jdbcType=VARCHAR},
+      data_update_time = #{dataUpdateTime,jdbcType=TIMESTAMP},
+      data_timestamp = #{dataTimestamp,jdbcType=TIMESTAMP},
+      data_stream = #{dataStream,jdbcType=INTEGER},
+      device_online = #{deviceOnline,jdbcType=INTEGER},
+      deviceId = #{deviceid,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ytrj.hardwaredata.entity.YanganInfo">
+    update ytrj_app_yangan_info
+    set signal_quality = #{signalQuality,jdbcType=INTEGER},
+      electric_quantity = #{electricQuantity,jdbcType=INTEGER},
+      device_state = #{deviceState,jdbcType=INTEGER},
+      message = #{message,jdbcType=VARCHAR},
+      data_update_time = #{dataUpdateTime,jdbcType=TIMESTAMP},
+      data_timestamp = #{dataTimestamp,jdbcType=TIMESTAMP},
+      data_stream = #{dataStream,jdbcType=INTEGER},
+      device_online = #{deviceOnline,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

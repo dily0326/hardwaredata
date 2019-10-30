@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ytrj.hardwaredata.dao.DianyuanInfoDAO">
+  <resultMap id="BaseResultMap" type="com.ytrj.hardwaredata.entity.DianyuanInfo">
+    <id column="ytrj_app_dianyuan_info_id" jdbcType="BIGINT" property="id" />
+    <result column="ytrj_app_dianyuan_info_imei" jdbcType="VARCHAR" property="imei" />
+    <result column="ytrj_app_dianyuan_info_voltage_a" jdbcType="INTEGER" property="voltageA" />
+    <result column="ytrj_app_dianyuan_info_voltage_b" jdbcType="INTEGER" property="voltageB" />
+    <result column="ytrj_app_dianyuan_info_voltage_c" jdbcType="INTEGER" property="voltageC" />
+    <result column="ytrj_app_dianyuan_info_electricity_a" jdbcType="INTEGER" property="electricityA" />
+    <result column="ytrj_app_dianyuan_info_electricity_b" jdbcType="INTEGER" property="electricityB" />
+    <result column="ytrj_app_dianyuan_info_electricity_c" jdbcType="INTEGER" property="electricityC" />
+    <result column="ytrj_app_dianyuan_info_electric_leakage_1" jdbcType="INTEGER" property="electricLeakage1" />
+    <result column="ytrj_app_dianyuan_info_electric_leakage_2" jdbcType="INTEGER" property="electricLeakage2" />
+    <result column="ytrj_app_dianyuan_info_electric_leakage_3" jdbcType="INTEGER" property="electricLeakage3" />
+    <result column="ytrj_app_dianyuan_info_electric_leakage_4" jdbcType="INTEGER" property="electricLeakage4" />
+    <result column="ytrj_app_dianyuan_info_temperature_1" jdbcType="INTEGER" property="temperature1" />
+    <result column="ytrj_app_dianyuan_info_temperature_2" jdbcType="INTEGER" property="temperature2" />
+    <result column="ytrj_app_dianyuan_info_temperature_3" jdbcType="INTEGER" property="temperature3" />
+    <result column="ytrj_app_dianyuan_info_temperature_4" jdbcType="INTEGER" property="temperature4" />
+    <result column="ytrj_app_dianyuan_info_arc_fault" jdbcType="INTEGER" property="arcFault" />
+    <result column="ytrj_app_dianyuan_info_resistance" jdbcType="INTEGER" property="resistance" />
+    <result column="ytrj_app_dianyuan_info_online" jdbcType="INTEGER" property="online" />
+    <result column="ytrj_app_dianyuan_info_data_time" jdbcType="TIMESTAMP" property="dataTime" />
+    <result column="ytrj_app_dianyuan_info_create_user" jdbcType="VARCHAR" property="createUser" />
+    <result column="ytrj_app_dianyuan_info_create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="ytrj_app_dianyuan_info_update_user" jdbcType="TIMESTAMP" property="updateUser" />
+    <result column="ytrj_app_dianyuan_info_update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    ytrj_app_dianyuan_info.id as ytrj_app_dianyuan_info_id, ytrj_app_dianyuan_info.imei as ytrj_app_dianyuan_info_imei, 
+    ytrj_app_dianyuan_info.voltage_a as ytrj_app_dianyuan_info_voltage_a, ytrj_app_dianyuan_info.voltage_b as ytrj_app_dianyuan_info_voltage_b, 
+    ytrj_app_dianyuan_info.voltage_c as ytrj_app_dianyuan_info_voltage_c, ytrj_app_dianyuan_info.electricity_a as ytrj_app_dianyuan_info_electricity_a, 
+    ytrj_app_dianyuan_info.electricity_b as ytrj_app_dianyuan_info_electricity_b, ytrj_app_dianyuan_info.electricity_c as ytrj_app_dianyuan_info_electricity_c, 
+    ytrj_app_dianyuan_info.electric_leakage_1 as ytrj_app_dianyuan_info_electric_leakage_1, 
+    ytrj_app_dianyuan_info.electric_leakage_2 as ytrj_app_dianyuan_info_electric_leakage_2, 
+    ytrj_app_dianyuan_info.electric_leakage_3 as ytrj_app_dianyuan_info_electric_leakage_3, 
+    ytrj_app_dianyuan_info.electric_leakage_4 as ytrj_app_dianyuan_info_electric_leakage_4, 
+    ytrj_app_dianyuan_info.temperature_1 as ytrj_app_dianyuan_info_temperature_1, ytrj_app_dianyuan_info.temperature_2 as ytrj_app_dianyuan_info_temperature_2, 
+    ytrj_app_dianyuan_info.temperature_3 as ytrj_app_dianyuan_info_temperature_3, ytrj_app_dianyuan_info.temperature_4 as ytrj_app_dianyuan_info_temperature_4, 
+    ytrj_app_dianyuan_info.arc_fault as ytrj_app_dianyuan_info_arc_fault, ytrj_app_dianyuan_info.resistance as ytrj_app_dianyuan_info_resistance, 
+    ytrj_app_dianyuan_info.`online` as `ytrj_app_dianyuan_info_online`, ytrj_app_dianyuan_info.data_time as ytrj_app_dianyuan_info_data_time, 
+    ytrj_app_dianyuan_info.create_user as ytrj_app_dianyuan_info_create_user, ytrj_app_dianyuan_info.create_time as ytrj_app_dianyuan_info_create_time, 
+    ytrj_app_dianyuan_info.update_user as ytrj_app_dianyuan_info_update_user, ytrj_app_dianyuan_info.update_time as ytrj_app_dianyuan_info_update_time
+  </sql>
+  <select id="selectByExample" parameterType="com.ytrj.hardwaredata.entity.DianyuanInfoExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from ytrj_app_dianyuan_info ytrj_app_dianyuan_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from ytrj_app_dianyuan_info ytrj_app_dianyuan_info
+    where ytrj_app_dianyuan_info.id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from ytrj_app_dianyuan_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.ytrj.hardwaredata.entity.DianyuanInfoExample">
+    delete from ytrj_app_dianyuan_info ytrj_app_dianyuan_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.ytrj.hardwaredata.entity.DianyuanInfo" useGeneratedKeys="true">
+    insert into ytrj_app_dianyuan_info (imei, voltage_a, voltage_b, 
+      voltage_c, electricity_a, electricity_b, 
+      electricity_c, electric_leakage_1, electric_leakage_2, 
+      electric_leakage_3, electric_leakage_4, temperature_1, 
+      temperature_2, temperature_3, temperature_4, 
+      arc_fault, resistance, `online`, 
+      data_time, create_user, create_time, 
+      update_user, update_time)
+    values (#{imei,jdbcType=VARCHAR}, #{voltageA,jdbcType=INTEGER}, #{voltageB,jdbcType=INTEGER}, 
+      #{voltageC,jdbcType=INTEGER}, #{electricityA,jdbcType=INTEGER}, #{electricityB,jdbcType=INTEGER}, 
+      #{electricityC,jdbcType=INTEGER}, #{electricLeakage1,jdbcType=INTEGER}, #{electricLeakage2,jdbcType=INTEGER}, 
+      #{electricLeakage3,jdbcType=INTEGER}, #{electricLeakage4,jdbcType=INTEGER}, #{temperature1,jdbcType=INTEGER}, 
+      #{temperature2,jdbcType=INTEGER}, #{temperature3,jdbcType=INTEGER}, #{temperature4,jdbcType=INTEGER}, 
+      #{arcFault,jdbcType=INTEGER}, #{resistance,jdbcType=INTEGER}, #{online,jdbcType=INTEGER}, 
+      #{dataTime,jdbcType=TIMESTAMP}, #{createUser,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{updateUser,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.ytrj.hardwaredata.entity.DianyuanInfo" useGeneratedKeys="true">
+    insert into ytrj_app_dianyuan_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="imei != null">
+        imei,
+      </if>
+      <if test="voltageA != null">
+        voltage_a,
+      </if>
+      <if test="voltageB != null">
+        voltage_b,
+      </if>
+      <if test="voltageC != null">
+        voltage_c,
+      </if>
+      <if test="electricityA != null">
+        electricity_a,
+      </if>
+      <if test="electricityB != null">
+        electricity_b,
+      </if>
+      <if test="electricityC != null">
+        electricity_c,
+      </if>
+      <if test="electricLeakage1 != null">
+        electric_leakage_1,
+      </if>
+      <if test="electricLeakage2 != null">
+        electric_leakage_2,
+      </if>
+      <if test="electricLeakage3 != null">
+        electric_leakage_3,
+      </if>
+      <if test="electricLeakage4 != null">
+        electric_leakage_4,
+      </if>
+      <if test="temperature1 != null">
+        temperature_1,
+      </if>
+      <if test="temperature2 != null">
+        temperature_2,
+      </if>
+      <if test="temperature3 != null">
+        temperature_3,
+      </if>
+      <if test="temperature4 != null">
+        temperature_4,
+      </if>
+      <if test="arcFault != null">
+        arc_fault,
+      </if>
+      <if test="resistance != null">
+        resistance,
+      </if>
+      <if test="online != null">
+        `online`,
+      </if>
+      <if test="dataTime != null">
+        data_time,
+      </if>
+      <if test="createUser != null">
+        create_user,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateUser != null">
+        update_user,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="imei != null">
+        #{imei,jdbcType=VARCHAR},
+      </if>
+      <if test="voltageA != null">
+        #{voltageA,jdbcType=INTEGER},
+      </if>
+      <if test="voltageB != null">
+        #{voltageB,jdbcType=INTEGER},
+      </if>
+      <if test="voltageC != null">
+        #{voltageC,jdbcType=INTEGER},
+      </if>
+      <if test="electricityA != null">
+        #{electricityA,jdbcType=INTEGER},
+      </if>
+      <if test="electricityB != null">
+        #{electricityB,jdbcType=INTEGER},
+      </if>
+      <if test="electricityC != null">
+        #{electricityC,jdbcType=INTEGER},
+      </if>
+      <if test="electricLeakage1 != null">
+        #{electricLeakage1,jdbcType=INTEGER},
+      </if>
+      <if test="electricLeakage2 != null">
+        #{electricLeakage2,jdbcType=INTEGER},
+      </if>
+      <if test="electricLeakage3 != null">
+        #{electricLeakage3,jdbcType=INTEGER},
+      </if>
+      <if test="electricLeakage4 != null">
+        #{electricLeakage4,jdbcType=INTEGER},
+      </if>
+      <if test="temperature1 != null">
+        #{temperature1,jdbcType=INTEGER},
+      </if>
+      <if test="temperature2 != null">
+        #{temperature2,jdbcType=INTEGER},
+      </if>
+      <if test="temperature3 != null">
+        #{temperature3,jdbcType=INTEGER},
+      </if>
+      <if test="temperature4 != null">
+        #{temperature4,jdbcType=INTEGER},
+      </if>
+      <if test="arcFault != null">
+        #{arcFault,jdbcType=INTEGER},
+      </if>
+      <if test="resistance != null">
+        #{resistance,jdbcType=INTEGER},
+      </if>
+      <if test="online != null">
+        #{online,jdbcType=INTEGER},
+      </if>
+      <if test="dataTime != null">
+        #{dataTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.ytrj.hardwaredata.entity.DianyuanInfoExample" resultType="java.lang.Long">
+    select count(*) from ytrj_app_dianyuan_info ytrj_app_dianyuan_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update ytrj_app_dianyuan_info ytrj_app_dianyuan_info
+    <set>
+      <if test="record.id != null">
+        ytrj_app_dianyuan_info.id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.imei != null">
+        ytrj_app_dianyuan_info.imei = #{record.imei,jdbcType=VARCHAR},
+      </if>
+      <if test="record.voltageA != null">
+        ytrj_app_dianyuan_info.voltage_a = #{record.voltageA,jdbcType=INTEGER},
+      </if>
+      <if test="record.voltageB != null">
+        ytrj_app_dianyuan_info.voltage_b = #{record.voltageB,jdbcType=INTEGER},
+      </if>
+      <if test="record.voltageC != null">
+        ytrj_app_dianyuan_info.voltage_c = #{record.voltageC,jdbcType=INTEGER},
+      </if>
+      <if test="record.electricityA != null">
+        ytrj_app_dianyuan_info.electricity_a = #{record.electricityA,jdbcType=INTEGER},
+      </if>
+      <if test="record.electricityB != null">
+        ytrj_app_dianyuan_info.electricity_b = #{record.electricityB,jdbcType=INTEGER},
+      </if>
+      <if test="record.electricityC != null">
+        ytrj_app_dianyuan_info.electricity_c = #{record.electricityC,jdbcType=INTEGER},
+      </if>
+      <if test="record.electricLeakage1 != null">
+        ytrj_app_dianyuan_info.electric_leakage_1 = #{record.electricLeakage1,jdbcType=INTEGER},
+      </if>
+      <if test="record.electricLeakage2 != null">
+        ytrj_app_dianyuan_info.electric_leakage_2 = #{record.electricLeakage2,jdbcType=INTEGER},
+      </if>
+      <if test="record.electricLeakage3 != null">
+        ytrj_app_dianyuan_info.electric_leakage_3 = #{record.electricLeakage3,jdbcType=INTEGER},
+      </if>
+      <if test="record.electricLeakage4 != null">
+        ytrj_app_dianyuan_info.electric_leakage_4 = #{record.electricLeakage4,jdbcType=INTEGER},
+      </if>
+      <if test="record.temperature1 != null">
+        ytrj_app_dianyuan_info.temperature_1 = #{record.temperature1,jdbcType=INTEGER},
+      </if>
+      <if test="record.temperature2 != null">
+        ytrj_app_dianyuan_info.temperature_2 = #{record.temperature2,jdbcType=INTEGER},
+      </if>
+      <if test="record.temperature3 != null">
+        ytrj_app_dianyuan_info.temperature_3 = #{record.temperature3,jdbcType=INTEGER},
+      </if>
+      <if test="record.temperature4 != null">
+        ytrj_app_dianyuan_info.temperature_4 = #{record.temperature4,jdbcType=INTEGER},
+      </if>
+      <if test="record.arcFault != null">
+        ytrj_app_dianyuan_info.arc_fault = #{record.arcFault,jdbcType=INTEGER},
+      </if>
+      <if test="record.resistance != null">
+        ytrj_app_dianyuan_info.resistance = #{record.resistance,jdbcType=INTEGER},
+      </if>
+      <if test="record.online != null">
+        ytrj_app_dianyuan_info.`online` = #{record.online,jdbcType=INTEGER},
+      </if>
+      <if test="record.dataTime != null">
+        ytrj_app_dianyuan_info.data_time = #{record.dataTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.createUser != null">
+        ytrj_app_dianyuan_info.create_user = #{record.createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createTime != null">
+        ytrj_app_dianyuan_info.create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateUser != null">
+        ytrj_app_dianyuan_info.update_user = #{record.updateUser,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateTime != null">
+        ytrj_app_dianyuan_info.update_time = #{record.updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update ytrj_app_dianyuan_info ytrj_app_dianyuan_info
+    set ytrj_app_dianyuan_info.id = #{record.id,jdbcType=BIGINT},
+      ytrj_app_dianyuan_info.imei = #{record.imei,jdbcType=VARCHAR},
+      ytrj_app_dianyuan_info.voltage_a = #{record.voltageA,jdbcType=INTEGER},
+      ytrj_app_dianyuan_info.voltage_b = #{record.voltageB,jdbcType=INTEGER},
+      ytrj_app_dianyuan_info.voltage_c = #{record.voltageC,jdbcType=INTEGER},
+      ytrj_app_dianyuan_info.electricity_a = #{record.electricityA,jdbcType=INTEGER},
+      ytrj_app_dianyuan_info.electricity_b = #{record.electricityB,jdbcType=INTEGER},
+      ytrj_app_dianyuan_info.electricity_c = #{record.electricityC,jdbcType=INTEGER},
+      ytrj_app_dianyuan_info.electric_leakage_1 = #{record.electricLeakage1,jdbcType=INTEGER},
+      ytrj_app_dianyuan_info.electric_leakage_2 = #{record.electricLeakage2,jdbcType=INTEGER},
+      ytrj_app_dianyuan_info.electric_leakage_3 = #{record.electricLeakage3,jdbcType=INTEGER},
+      ytrj_app_dianyuan_info.electric_leakage_4 = #{record.electricLeakage4,jdbcType=INTEGER},
+      ytrj_app_dianyuan_info.temperature_1 = #{record.temperature1,jdbcType=INTEGER},
+      ytrj_app_dianyuan_info.temperature_2 = #{record.temperature2,jdbcType=INTEGER},
+      ytrj_app_dianyuan_info.temperature_3 = #{record.temperature3,jdbcType=INTEGER},
+      ytrj_app_dianyuan_info.temperature_4 = #{record.temperature4,jdbcType=INTEGER},
+      ytrj_app_dianyuan_info.arc_fault = #{record.arcFault,jdbcType=INTEGER},
+      ytrj_app_dianyuan_info.resistance = #{record.resistance,jdbcType=INTEGER},
+      ytrj_app_dianyuan_info.`online` = #{record.online,jdbcType=INTEGER},
+      ytrj_app_dianyuan_info.data_time = #{record.dataTime,jdbcType=TIMESTAMP},
+      ytrj_app_dianyuan_info.create_user = #{record.createUser,jdbcType=VARCHAR},
+      ytrj_app_dianyuan_info.create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      ytrj_app_dianyuan_info.update_user = #{record.updateUser,jdbcType=TIMESTAMP},
+      ytrj_app_dianyuan_info.update_time = #{record.updateTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ytrj.hardwaredata.entity.DianyuanInfo">
+    update ytrj_app_dianyuan_info
+    <set>
+      <if test="imei != null">
+        imei = #{imei,jdbcType=VARCHAR},
+      </if>
+      <if test="voltageA != null">
+        voltage_a = #{voltageA,jdbcType=INTEGER},
+      </if>
+      <if test="voltageB != null">
+        voltage_b = #{voltageB,jdbcType=INTEGER},
+      </if>
+      <if test="voltageC != null">
+        voltage_c = #{voltageC,jdbcType=INTEGER},
+      </if>
+      <if test="electricityA != null">
+        electricity_a = #{electricityA,jdbcType=INTEGER},
+      </if>
+      <if test="electricityB != null">
+        electricity_b = #{electricityB,jdbcType=INTEGER},
+      </if>
+      <if test="electricityC != null">
+        electricity_c = #{electricityC,jdbcType=INTEGER},
+      </if>
+      <if test="electricLeakage1 != null">
+        electric_leakage_1 = #{electricLeakage1,jdbcType=INTEGER},
+      </if>
+      <if test="electricLeakage2 != null">
+        electric_leakage_2 = #{electricLeakage2,jdbcType=INTEGER},
+      </if>
+      <if test="electricLeakage3 != null">
+        electric_leakage_3 = #{electricLeakage3,jdbcType=INTEGER},
+      </if>
+      <if test="electricLeakage4 != null">
+        electric_leakage_4 = #{electricLeakage4,jdbcType=INTEGER},
+      </if>
+      <if test="temperature1 != null">
+        temperature_1 = #{temperature1,jdbcType=INTEGER},
+      </if>
+      <if test="temperature2 != null">
+        temperature_2 = #{temperature2,jdbcType=INTEGER},
+      </if>
+      <if test="temperature3 != null">
+        temperature_3 = #{temperature3,jdbcType=INTEGER},
+      </if>
+      <if test="temperature4 != null">
+        temperature_4 = #{temperature4,jdbcType=INTEGER},
+      </if>
+      <if test="arcFault != null">
+        arc_fault = #{arcFault,jdbcType=INTEGER},
+      </if>
+      <if test="resistance != null">
+        resistance = #{resistance,jdbcType=INTEGER},
+      </if>
+      <if test="online != null">
+        `online` = #{online,jdbcType=INTEGER},
+      </if>
+      <if test="dataTime != null">
+        data_time = #{dataTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null">
+        create_user = #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        update_user = #{updateUser,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ytrj.hardwaredata.entity.DianyuanInfo">
+    update ytrj_app_dianyuan_info
+    set imei = #{imei,jdbcType=VARCHAR},
+      voltage_a = #{voltageA,jdbcType=INTEGER},
+      voltage_b = #{voltageB,jdbcType=INTEGER},
+      voltage_c = #{voltageC,jdbcType=INTEGER},
+      electricity_a = #{electricityA,jdbcType=INTEGER},
+      electricity_b = #{electricityB,jdbcType=INTEGER},
+      electricity_c = #{electricityC,jdbcType=INTEGER},
+      electric_leakage_1 = #{electricLeakage1,jdbcType=INTEGER},
+      electric_leakage_2 = #{electricLeakage2,jdbcType=INTEGER},
+      electric_leakage_3 = #{electricLeakage3,jdbcType=INTEGER},
+      electric_leakage_4 = #{electricLeakage4,jdbcType=INTEGER},
+      temperature_1 = #{temperature1,jdbcType=INTEGER},
+      temperature_2 = #{temperature2,jdbcType=INTEGER},
+      temperature_3 = #{temperature3,jdbcType=INTEGER},
+      temperature_4 = #{temperature4,jdbcType=INTEGER},
+      arc_fault = #{arcFault,jdbcType=INTEGER},
+      resistance = #{resistance,jdbcType=INTEGER},
+      `online` = #{online,jdbcType=INTEGER},
+      data_time = #{dataTime,jdbcType=TIMESTAMP},
+      create_user = #{createUser,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_user = #{updateUser,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
