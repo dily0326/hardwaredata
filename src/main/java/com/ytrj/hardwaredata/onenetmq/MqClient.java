@@ -69,7 +69,7 @@ public class MqClient {
         //MQ实例名称
         String userName = "IO-MQ";
         //MQ access_key
-        String accessKey = "giP4YAxJFX4o15rq093WmWjvD4nhcjsikKDL1TLep2I=";
+        String accessKey = "123456";
         String expirationTime = System.currentTimeMillis() / 1000 + 1000 * 24 * 60 * 60 + "";
 
         //版本号，无需修改
